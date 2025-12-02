@@ -22,9 +22,9 @@ void print_levelerror(void)
 {
     clear();
     MVPRINTW(0, 0, "An error occured openning level file!");
-    MVPRINTW(2, 0, "Please check ./tests/ directory.");
+    MVPRINTW(2, 0, "Please check ./game_data/ directory.");
     MVPRINTW(3, 0, "There should be 5 level files named level_(1-5).txt.");
-    MVPRINTW(4, 0, "Also try to open the game nearby ./tests/ directory.");
+    MVPRINTW(4, 0, "Also try to open the game nearby ./game_data/ directory.");
     MVPRINTW(6, 0, "Press any key to exit.");
 }
 

@@ -16,13 +16,13 @@
 #define MVADDCH(y, x, c) mvaddch(BOARDS_BEGIN + (y), BOARDS_BEGIN + (x), c)
 #define CLEAR_BACKPOS(y, x) mvaddch(BOARDS_BEGIN + (y), BOARDS_BEGIN + (x), ' ')
 
-#define YOU_WON "tests/game_progress/you_won.txt"
-#define YOU_LOSE "tests/game_progress/you_lose.txt"
-#define LEVEL_DIR "tests/levels/level_"
+#define YOU_WON "game_data/game_progress/you_won.txt"
+#define YOU_LOSE "game_data/game_progress/you_lose.txt"
+#define LEVEL_DIR "game_data/levels/level_"
 #define INTRO_MESSAGE "Press ENTER to start!"
 #define INTRO_MESSAGE_LEN     21
 #define LEVEL_CNT 5
-#define LEVELNAME_MAX 25
+#define LEVELNAME_MAX 28
 
 #define MAX_WIN_COUNT    10
 
