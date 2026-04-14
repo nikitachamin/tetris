@@ -21,6 +21,17 @@ Summary: In this project, you need to implement the Tetris game in the C program
     - [Part 2. Bonus. Scoring and game record](#part-2-bonus-scoring-and-game-record)
     - [Part 3. Bonus. Level mechanics](#part-3-bonus-level-mechanics)
 
+## Instructions 
+
+How to learn at “School 21”:
+
+- Here, you’ll find a unique learning experience with a lot of freedom. You’re given a task and left to find your own way to solve it, using whatever resources work best for you — whether that’s the Internet or AI tools like GigaChat. Just be mindful of information quality: verify, think critically, analyze, and compare.
+- Peer-to-peer (P2P) learning is the exchange of knowledge and experience with peers, where everyone acts as both mentor and student. This approach allows you to gain a deeper understanding of the material by learning from one another.
+- Feel free to ask for help: around you are peers who are also navigating this path for the first time. Share your own experience and ideas with others.  Join Rocket.Chat to stay updated with the latest community announcements. 
+- Your learning is meaningless if you just copy someone else’s solutions. When receiving help from others, always make sure you fully understand the “why”, “how”, and “purpose” behind the solution. Don’t be afraid to make mistakes. 
+- Does the task seem impossible? Take a break, get some fresh air and clear your mind — this has helped many people. Maybe after that, the solution will come to you naturally.
+- The learning process is just as important as the result. It’s not just about completing the task — it’s about understanding HOW to solve it. 
+
 ## Introduction
 
 The project must consist of two parts to implement the Tetris game: a library that implements the logic of the game, which can be connected to different GUIs in the future, and a terminal interface. The logic of the library must be implemented using finite-state machines, one of the possible descriptions of which is given below.
@@ -102,6 +113,8 @@ This FSM has the following states:
 
 You need to implement the BrickGame v1.0 aka Tetris program:
 
+- Before starting, clone the project from GitLab into a repository with the same name.
+- After cloning the project, create a _develop_ branch and do all your development there. Then, push the _develop_ branch to GitLab.
 - The program must be developed in C language of the C11 standard using the gcc compiler.
 - The program must consist of two parts: a library implementing the logic of the Tetris game, and a terminal interface using the `ncurses` library.
 - A finite state machine must be used to formalize the logic of the game.
@@ -134,6 +147,7 @@ You need to implement the BrickGame v1.0 aka Tetris program:
 - The library interface must match the [description](./materials/library-specification.md).
 - The UI must support rendering of the playing field and additional information.
 - Prepare a diagram in any format describing the FSM used (its states and all possible transitions).
+- Your directory should not contain any files other than those specified in the assignments.
 
 Pieces used:
 
