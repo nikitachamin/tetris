@@ -13,11 +13,18 @@
 
 srand(time(NULL));
 
-typedef struct {
-    int cells[FIELD_HEIGHT][FIELD_WIDTH];
-} Board;
-
+int level;
+int score;
 int current_piece;
 int next_piece;
+
+typedef enum {
+    START,
+    SPAWN,
+    MOVE,
+    SHIFT,
+    ATTACH,
+    GAME_OVER,
+} GameState;
 
 #endif // TETRIS_GAME_H

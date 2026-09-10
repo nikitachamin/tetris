@@ -11,6 +11,7 @@ typedef enum {
     Z,
 } PieceType;
 
+
 typedef struct {
     PieceType type;
     int x;
