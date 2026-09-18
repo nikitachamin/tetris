@@ -1,0 +1,23 @@
+digraph TetrisFSM {
+  rankdir=LR;
+  node [shape=ellipse];
+
+  Start -> Spawn [label="Start"];
+  Spawn -> Moving [label="piece fits"];
+  Spawn -> GameOver [label="spawn collision"];
+
+  Moving -> Moving [label="Left / Right / Action"];
+  Moving -> Shift [label="timer"];
+  Moving -> Attach [label="Down"];
+  Moving -> Pause [label="Pause"];
+  Moving -> GameOver [label="Terminate"];
+
+  Shift -> Moving [label="can move down"];
+  Shift -> Attach [label="collision"];
+  Attach -> Spawn [label="lock and clear"];
+  Attach -> GameOver [label="top reached"];
+
+  Pause -> Moving [label="Pause"];
+  Pause -> GameOver [label="Terminate"];
+  GameOver -> Spawn [label="Start"];
+}
